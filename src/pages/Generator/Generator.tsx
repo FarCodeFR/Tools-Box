@@ -125,7 +125,7 @@ function Generator() {
 					max="30"
 				/>
 				<p>{lengthPassword}</p>
-				<div className="container-checkbox">
+				<section className="container-checkbox">
 					<input
 						type="checkbox"
 						id="uppercase"
@@ -154,7 +154,7 @@ function Generator() {
 						onChange={(e) => setSymbols(e.target.checked)}
 					/>
 					<label htmlFor="symboles">Symboles</label>
-				</div>
+				</section>
 				<div className="strength-indicator">
 					<span className="label">FORCE</span>
 					<span className="level">{isRobust}</span>

@@ -199,15 +199,40 @@ input[type="checkbox"] {
 			}
 		}
 		& .container-generator {
-			width: 100%;
+			max-width: 100%;
 		}
 		& .container-checkbox {
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			max-width: fit-content;
 			& label {
-				font-size: 15px;
+				font-size: 16px;
+				margin-left: 0;
+				margin-top: 5px;
+			}
+			& div {
+				display: flex;
+				align-content: center;
+				margin-bottom: 5px;
 			}
 		}
 		& .strength-indicator .level {
 			margin-left: 40%;
 		}
+	}
+	.container-generator-main .container-checkbox input[type="checkbox"] {
+		width: 40%;
+	}
+
+	.strength-indicator {
+		justify-content: center;
+		max-width: 100%;
+	}
+
+	.container-generator-main .container-checkbox > div {
+		display: flex;
+		align-content: center;
+		margin-bottom: 5px;
 	}
 }
