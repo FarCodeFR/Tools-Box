@@ -185,3 +185,29 @@ input[type="checkbox"] {
 .button-generator:hover {
 	opacity: 80%;
 }
+
+@media screen and (max-width: 430px) {
+	.container-generator-main {
+		width: 90%;
+		& h1 {
+			font-size: 24px;
+		}
+		& .input-with-button {
+			width: 100%;
+			& button {
+				left: 85%;
+			}
+		}
+		& .container-generator {
+			width: 100%;
+		}
+		& .container-checkbox {
+			& label {
+				font-size: 15px;
+			}
+		}
+		& .strength-indicator .level {
+			margin-left: 40%;
+		}
+	}
+}
