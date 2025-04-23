@@ -117,6 +117,11 @@
 	display: flex;
 	align-items: center;
 	width: 80%;
+	& div {
+		display: flex;
+		justify-content: center;
+		gap: 3px;
+	}
 }
 input[type="checkbox"] {
 	-ms-transform: scale(2); /* IE */
@@ -125,6 +130,7 @@ input[type="checkbox"] {
 	-o-transform: scale(2); /* Opera */
 	transform: scale(1.5);
 	padding: 10px;
+	margin-left: 20px;
 }
 
 .strength-indicator {

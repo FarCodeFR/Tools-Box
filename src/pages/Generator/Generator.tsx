@@ -126,34 +126,42 @@ function Generator() {
 				/>
 				<p>{lengthPassword}</p>
 				<section className="container-checkbox">
-					<input
-						type="checkbox"
-						id="uppercase"
-						checked={uppercase}
-						onChange={(e) => setUppercase(e.target.checked)}
-					/>
-					<label htmlFor="uppercase">Majuscule</label>
-					<input
-						type="checkbox"
-						id="lowercase"
-						checked={lowercase}
-						onChange={(e) => setLowercase(e.target.checked)}
-					/>
-					<label htmlFor="lowercase">Minuscule</label>
-					<input
-						type="checkbox"
-						id="numbers"
-						checked={numbers}
-						onChange={(e) => setNumbers(e.target.checked)}
-					/>
-					<label htmlFor="numbers">Chiffres</label>
-					<input
-						type="checkbox"
-						id="symboles"
-						checked={symbols}
-						onChange={(e) => setSymbols(e.target.checked)}
-					/>
-					<label htmlFor="symboles">Symboles</label>
+					<div>
+						<input
+							type="checkbox"
+							id="uppercase"
+							checked={uppercase}
+							onChange={(e) => setUppercase(e.target.checked)}
+						/>
+						<label htmlFor="uppercase">Majuscule</label>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							id="lowercase"
+							checked={lowercase}
+							onChange={(e) => setLowercase(e.target.checked)}
+						/>
+						<label htmlFor="lowercase">Minuscule</label>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							id="numbers"
+							checked={numbers}
+							onChange={(e) => setNumbers(e.target.checked)}
+						/>
+						<label htmlFor="numbers">Chiffres</label>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							id="symboles"
+							checked={symbols}
+							onChange={(e) => setSymbols(e.target.checked)}
+						/>
+						<label htmlFor="symboles">Symboles</label>
+					</div>
 				</section>
 				<div className="strength-indicator">
 					<span className="label">FORCE</span>
