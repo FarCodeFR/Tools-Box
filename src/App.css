@@ -34,12 +34,18 @@ a:hover {
 h1,
 h2,
 h3,
+label,
 a {
 	font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
 		sans-serif;
 	color: white;
 }
 p {
+	font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
+		sans-serif;
+}
+input,
+button {
 	font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
 		sans-serif;
 }

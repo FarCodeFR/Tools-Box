@@ -1,0 +1,134 @@
+.container-generator-main {
+	margin: 10% auto;
+	text-align: center;
+	& input {
+		width: 80%;
+		background-color: transparent;
+		border: none;
+		font-size: 24px;
+		color: rgba(255, 255, 255, 0.428);
+	}
+	& .input-with-button > button {
+		cursor: pointer;
+		position: absolute;
+		top: 20%;
+		left: 90%;
+		width: 45px;
+		height: 40px;
+		border: none;
+		background-color: transparent;
+	}
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.input-with-button {
+	text-align: start;
+	margin: 0 auto;
+	position: relative;
+	width: 500px;
+	height: 70px;
+	background-color: rgb(32, 37, 54);
+	border: none;
+	color: rgba(255, 255, 255, 0.428);
+	padding: 20px;
+	font-size: 20px;
+}
+
+.container-generator {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: rgb(32, 37, 54);
+	width: 500px;
+	margin: 2% auto;
+	& label {
+		color: white;
+		font-size: 20px;
+		text-align: start;
+		margin: 2%;
+	}
+	& input {
+		margin: 1%;
+	}
+	& p {
+		position: absolute;
+		color: rgb(93, 240, 93);
+		left: 90%;
+		font-size: 26px;
+		top: 0%;
+	}
+}
+
+.container-checkbox {
+	display: flex;
+	align-items: center;
+	width: 80%;
+}
+input[type="checkbox"] {
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(1.5);
+	padding: 10px;
+}
+
+.strength-indicator {
+	display: flex;
+	align-items: center;
+	background-color: #4b4b4b78; /* Couleur de fond du composant */
+	color: #dddddd7f; /* Couleur du texte par défaut */
+	padding: 10px;
+	border-radius: 5px;
+	font-family: monospace;
+}
+
+.strength-indicator .label {
+	font-size: 1.2em;
+	margin-right: 10px;
+	justify-content: start;
+}
+
+.strength-indicator .level {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #c0c0c0;
+	justify-content: center;
+	margin-left: 50%;
+	margin-right: 10%;
+}
+
+.strength-indicator .bars-container {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: end;
+}
+
+.strength-indicator .bar {
+	font-size: 0;
+	width: 8px;
+	height: 20px;
+	background-color: #555;
+	margin-right: 3px;
+	border-radius: 2px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.strength-indicator .bar:last-child {
+	margin-right: 0;
+}
+
+.button-generator {
+	color: rgb(0, 0, 0);
+	font-size: 24px;
+	margin: 5% auto;
+	width: 90%;
+	height: 60px;
+	background: rgb(144, 255, 144);
+}

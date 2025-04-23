@@ -16,6 +16,9 @@ function App() {
 						<NavLink to="extension">
 							<li>Extension</li>
 						</NavLink>
+						<NavLink to="generator">
+							<li>Générateur de mots de passe</li>
+						</NavLink>
 					</ul>
 				</div>
 			</nav>
