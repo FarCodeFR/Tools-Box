@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import "./app.css";
+import "./App.css";
 import BurgerMenu from "./components/BurgerMenu";
 function App() {
 	return (
