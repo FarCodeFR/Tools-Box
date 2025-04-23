@@ -3,18 +3,21 @@ import "./generator.css";
 
 function Generator() {
 	const [password, setPassword] = useState("Fdsgr3@D");
-	const [lengthPassword, setLengthPassword] = useState(0);
+	const [lengthPassword, setLengthPassword] = useState(15);
 	const [uppercase, setUppercase] = useState(true);
 	const [lowercase, setLowercase] = useState(true);
 	const [numbers, setNumbers] = useState(true);
 	const [symbols, setSymbols] = useState(true);
-	const [errors, setErrors] = useState({});
 	const [isRobust, setIsRobust] = useState("");
 	const [isBar, setIsBar] = useState(0);
 	const [colorBar, setColorBar] = useState("#555");
+	const [visible, setVisible] = useState(false);
 
 	useEffect(() => {
 		generatePassword();
+		setTimeout(() => {
+			setVisible(true);
+		}, 100);
 	}, []);
 
 	const random = (min = 0, max = 1) => {
@@ -34,21 +37,6 @@ function Generator() {
 	};
 
 	const generatePassword = () => {
-		setErrors({});
-		if (!uppercase && !lowercase && !numbers && !symbols) {
-			return setErrors("qssdsdds");
-		}
-		if (lengthPassword === 0) {
-			return setErrors("La longeur du mot de passe de peut pas être 0");
-		}
-		if (lengthPassword === null) {
-			return setErrors("Mot de passe pas assez long");
-		}
-		if (lengthPassword >= 30) {
-			return setErrors(
-				"Mot de passe ne peut pas être suppérieur à 30 charactères",
-			);
-		}
 		let password = "";
 		for (let i = 0; i < lengthPassword; i++) {
 			const choice = random(0, 3);
@@ -115,10 +103,10 @@ function Generator() {
 		}
 	};
 	return (
-		<main className="container-generator-main">
+		<main className={`container-generator-main ${visible ? "visible" : ""}`}>
 			<h1>Générateur de mots de passe</h1>
 			<div className="input-with-button">
-				<input type="readonly" value={password} />
+				<input type="text" value={password} />
 				<button type="button" onClick={handleCopy}>
 					<img src="images/copy.png" alt="" />
 				</button>
@@ -128,8 +116,10 @@ function Generator() {
 				<input
 					type="range"
 					id="Length"
-					onChange={handleChange}
-					onClick={generatePassword}
+					onChange={(e) => {
+						handleChange(e);
+						generatePassword();
+					}}
 					name="longeur"
 					min="0"
 					max="30"
@@ -145,7 +135,7 @@ function Generator() {
 					<label htmlFor="uppercase">Majuscule</label>
 					<input
 						type="checkbox"
-						id="uppercase"
+						id="lowercase"
 						checked={lowercase}
 						onChange={(e) => setLowercase(e.target.checked)}
 					/>
