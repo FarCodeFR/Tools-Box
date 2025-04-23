@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ? Dark */
+body {
+	background: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+.container-toggle {
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	align-items: center;
+	width: 70%;
+	border-radius: 15px;
+	margin: 10% auto;
+	margin-bottom: 2%;
+	background-color: hsl(226, 25%, 17%);
+	& figure {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		margin-left: 0%;
+		width: 15%;
+		& img {
+			width: 70%;
+			object-fit: contain;
+			height: 70%;
+		}
+	}
+	& button {
+		border-radius: 10px;
+		width: 40px;
+		height: 40px;
+		margin-right: 20px;
+		background-color: hsl(226, 11%, 37%);
+		border: none;
+		font-size: 24px;
+		cursor: pointer;
+	}
+	& button:hover {
+		opacity: 80%;
+		background-color: white;
+	}
+}
+
+.container-extension-list ul > li > button.active-filter {
+	background-color: rgb(255, 64, 64);
+	color: black;
+	transition: ease-in 0.2s;
+}
+
+.container-extension-list {
+	display: flex;
+	border: none;
+	justify-content: space-between;
+	align-items: center;
+	width: 85%;
+	margin: 0% auto;
+	& h1 {
+		font-size: 32px;
+	}
+	& ul {
+		display: flex;
+		gap: 10px;
+	}
+	& li:first-of-type {
+		width: 70px;
+	}
+	& li {
+		width: 100px;
+	}
+	& li > button {
+		border-radius: 15px;
+		cursor: pointer;
+		border: none;
+		color: white;
+		background-color: hsl(226, 11%, 37%);
+		width: 100%;
+		height: 30px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.container-toggle {
+		margin-top: 20%;
+		width: 90%;
+		& figure {
+			margin-left: 2%;
+		}
+		& button {
+			margin-right: 10px;
+		}
+	}
+	.container-extension-list {
+		flex-direction: column;
+		width: 100%;
+		& ul {
+			padding: 0;
+		}
+	}
+}

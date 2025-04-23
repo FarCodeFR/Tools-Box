@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.background-qrc {
+	background-color: #68778d;
+	max-height: 100%;
+	padding: 57px 0;
+}
+
+.container-card-qr {
+	display: block;
+	background-color: white;
+	border-radius: 15px;
+	margin: 6% auto;
+	max-height: 100%;
+	width: 20%;
+	padding: 20px;
+	box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.073);
+	& figure {
+		margin: 0 auto;
+	}
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+	& figcaption {
+		text-align: center;
+		& h2 {
+			color: #1f314f;
+			font-size: 22px;
+			margin: 5% 6% auto;
+			word-spacing: 0px;
+			font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
+				sans-serif;
+		}
+		& p {
+			font-size: 15px;
+			word-spacing: 0.2px;
+			font-family: "Outfit", "Lucida Sans", "Lucida Sans Regular",
+				"Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+			color: #68778d;
+		}
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.container-card-qr {
+		width: 80%;
+		margin: 50% auto;
+	}
+}

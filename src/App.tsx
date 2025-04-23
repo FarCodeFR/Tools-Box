@@ -1,20 +1,27 @@
-import './App.css'
-
+import { NavLink, Outlet } from "react-router-dom";
+import "./app.css";
 function App() {
-
-  return (
-    <section className='container-card-qr'>
-    <figure>
-      <picture>
-      <img src="/images/QRC.png" alt="QR code pour accéder au site Front-End Mentor" />
-      </picture>
-    <figcaption>
-      <h2>Improve your front-end skills by building projects</h2>
-      <p>Scan the QR code to visit Frontend <br/> Mentor and take your coding skills to <br/> the next level</p>
-    </figcaption>
-    </figure>
-    </section>
-  )
+	return (
+		<>
+			<nav className="navigation-menu">
+				<h1>Bac à Sable</h1>
+				<div>
+					<ul>
+						<NavLink to="/">
+							<li>Accueil</li>
+						</NavLink>
+						<NavLink to="qrc">
+							<li>QRC</li>
+						</NavLink>
+						<NavLink to="extension">
+							<li>Extension</li>
+						</NavLink>
+					</ul>
+				</div>
+			</nav>
+			<Outlet />
+		</>
+	);
 }
 
-export default App
+export default App;

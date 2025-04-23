@@ -1,46 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-* {
-  box-sizing: border-box;
+.navigation-menu {
+	position: relative;
+	z-index: 1;
+	& h1 {
+		font-size: 44px;
+		text-align: center;
+		margin: 1% auto;
+		font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
+			sans-serif;
+	}
+	& div {
+		position: absolute;
+		background-color: rgb(30, 11, 61);
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+	}
+	& ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	font-size: 24px;
+}
+a:hover {
+	color: rgba(88, 194, 255, 0.887);
 }
 
-body {
-  margin: 0;
-  background-color: #D5E1EF;;
+h1,
+h2,
+h3,
+a {
+	font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
+		sans-serif;
+	color: white;
+}
+p {
+	font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
+		sans-serif;
 }
 
-.container-card-qr {
-  display: block;
-  background-color: white;
-  border-radius: 15px;
-  margin: 20% auto;
-  width: 20%;
-  padding: 15px;
-  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.073);
-  & img {
-    width: 100%;
-    height: 100%;
-  }
-  & figcaption {
-    text-align: center;
-    & h2 {
-color: #1F314F;
-font-size: 22px;
-margin: 5% 6% auto;
-word-spacing: 0px;
-font-family: "Outfit", Bold;
-    }
-    & p {
-  font-size: 15px;
-  word-spacing: 0.2px;
-  font-family: "Outfit", Regular;
-  color: #68778D;
-    }
-  }
-}
-
-@media screen  and (max-width: 430px){
-  .container-card-qr {
-    width: 80%;
-  }
+.container-light {
+	background: hsl(217, 61%, 90%);
+	& nav > h1 {
+		color: black;
+	}
+	& nav > ul > li > button {
+		background-color: white;
+		color: black;
+	}
+	& .container-extension-list ul > li > button.active-filter {
+		color: white;
+	}
+	& .container-toggle {
+		background-color: hsl(0, 0%, 100%);
+		& figure > figcaption > h2 {
+			color: black;
+		}
+		& button {
+			border: solid 2px red;
+			background-color: rgba(238, 238, 238, 0.537);
+		}
+	}
+	.container-extension {
+		background: white;
+		color: black;
+		border: solid 2px rgba(66, 65, 65, 0.166);
+		& div:first-of-type > article > h3 {
+			color: black;
+		}
+		& div:last-of-type > button {
+			background: rgba(255, 255, 255, 0.64);
+			border: solid 2px rgba(66, 66, 66, 0.185);
+			color: black;
+		}
+	}
+	.slider {
+		border: solid 1px rgba(0, 0, 0, 0.365);
+		background-color: rgba(158, 157, 157, 0.736);
+	}
 }

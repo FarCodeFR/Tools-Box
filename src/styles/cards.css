@@ -1,0 +1,127 @@
+.container-zone-cards {
+	display: flex;
+	gap: 1%;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.container-extension {
+	width: 28%;
+	border: hsl(226, 11%, 37%) solid 2px;
+	background-color: hsl(226, 25%, 17%);
+	border-radius: 15px;
+	margin-bottom: 1%;
+	color: hsla(217, 61%, 90%, 0.621);
+	opacity: 0;
+	animation: slidUp 0.3s ease-in-out forwards;
+	transform: translateY(15px);
+}
+
+@keyframes slidUp {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.container-extension > div:first-of-type {
+	display: flex;
+	gap: 15px;
+	padding: 20px;
+	& article {
+		& h3,
+		p {
+			margin: 0;
+		}
+	}
+}
+.container-extension > div:last-of-type {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0% auto;
+	padding: 5%;
+	& button {
+		cursor: pointer;
+		background-color: hsl(226, 25%, 17%);
+		border: rgba(255, 255, 255, 0.367) solid 2px;
+		color: rgba(255, 255, 255, 0.739);
+		border-radius: 15px;
+		font-size: 16px;
+		padding: 5px;
+		width: 20%;
+	}
+}
+
+/* The slider */
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.367);
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 3px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: rgb(255, 64, 64);
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+@media screen and (max-width: 430px) {
+	.container-zone-cards {
+		flex-direction: column;
+	}
+	.container-extension {
+		width: 90%;
+		margin: 2% auto;
+	}
+}
