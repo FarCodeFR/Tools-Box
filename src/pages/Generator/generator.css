@@ -229,6 +229,7 @@ input[type="checkbox"] {
 	}
 	.container-generator-main .container-checkbox input[type="checkbox"] {
 		width: 40%;
+		transform: scale(1);
 	}
 
 	.strength-indicator {
