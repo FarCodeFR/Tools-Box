@@ -78,7 +78,8 @@
 	text-align: start;
 	margin: 0 auto;
 	position: relative;
-	width: 500px;
+	width: 100%;
+	max-width: 500px;
 	height: 70px;
 	background-color: rgb(32, 37, 54);
 	border: none;
@@ -93,7 +94,8 @@
 	flex-direction: column;
 	padding: 10px;
 	background-color: rgb(32, 37, 54);
-	width: 500px;
+	width: 100%;
+	max-width: 500px;
 	margin: 2% auto;
 	& label {
 		color: white;
@@ -210,8 +212,8 @@ input[type="checkbox"] {
 		& .container-checkbox {
 			display: flex;
 			flex-wrap: wrap;
-			align-content: center;
-			max-width: fit-content;
+			align-items: center;
+			max-width: 100%;
 			& label {
 				font-size: 16px;
 				margin-left: 0;
@@ -228,8 +230,8 @@ input[type="checkbox"] {
 		}
 	}
 	.container-generator-main .container-checkbox input[type="checkbox"] {
-		width: 40%;
-		transform: scale(1);
+		width: 100%;
+		transform: scale(1.5);
 	}
 
 	.strength-indicator {
@@ -239,7 +241,6 @@ input[type="checkbox"] {
 
 	.container-generator-main .container-checkbox > div {
 		display: flex;
-		align-content: center;
 		margin-bottom: 5px;
 	}
 }
