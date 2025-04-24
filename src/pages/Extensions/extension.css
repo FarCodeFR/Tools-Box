@@ -4,10 +4,11 @@
 
 .container-dark {
 	background: linear-gradient(180deg, #040918 0%, #091540 100%);
-	& .navigation-menu,
-	h1 {
-		background: linear-gradient(180deg, #040918 100%, #091540 0%);
-	}
+	min-height: 100vh;
+}
+
+.container-light {
+	min-height: 100vh;
 }
 
 .container-toggle {

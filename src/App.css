@@ -2,15 +2,21 @@
 	& h1 {
 		font-size: 44px;
 		text-align: center;
-		margin: 1% auto;
+		margin: 0 auto;
 		font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
 			sans-serif;
 	}
 }
 .container-dark {
-	.navigation-menu,
-	h1 {
-		background: linear-gradient(180deg, #040918 0%, #091540 100%);
+	h1,
+	h2,
+	h3,
+	label,
+	p,
+	input,
+	button,
+	a {
+		color: white;
 	}
 }
 
@@ -31,22 +37,14 @@ a {
 a:hover {
 	color: rgba(88, 194, 255, 0.887);
 }
-
 h1,
 h2,
 h3,
 label,
-a {
-	font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
-		sans-serif;
-	color: white;
-}
-p {
-	font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
-		sans-serif;
-}
+p,
 input,
-button {
+button,
+a {
 	font-family: "Outfit", Impact, Haettenschweiler, "Arial Narrow Bold",
 		sans-serif;
 }
