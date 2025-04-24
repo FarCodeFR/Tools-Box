@@ -97,11 +97,13 @@ button {
 	text-align: center;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 730px) {
 	.navigation-menu > h1 {
 		padding: 3px;
+		font-size: 36px;
 	}
 	.container-text-home {
-		font-size: 16px;
+		font-size: 20px;
+		padding: 20px;
 	}
 }

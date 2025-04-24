@@ -106,7 +106,7 @@ function Generator() {
 		<main className={`container-generator-main ${visible ? "visible" : ""}`}>
 			<h1>Générateur de mots de passe</h1>
 			<div className="input-with-button">
-				<input type="text" value={password} />
+				<input type="text" value={password} readOnly />
 				<button type="button" onClick={handleCopy}>
 					<img src="images/copy.png" alt="" />
 				</button>
@@ -116,10 +116,8 @@ function Generator() {
 				<input
 					type="range"
 					id="Length"
-					onChange={(e) => {
-						handleChange(e);
-						generatePassword();
-					}}
+					value={lengthPassword}
+					onChange={handleChange}
 					name="longeur"
 					min="0"
 					max="30"
