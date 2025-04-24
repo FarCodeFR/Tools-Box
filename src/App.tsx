@@ -1,9 +1,12 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import BurgerMenu from "./components/BurgerMenu";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/DarkModeContext";
 function App() {
+	const { darkMode } = useContext(DarkModeContext);
 	return (
-		<>
+		<header className={darkMode ? "container-dark" : "container-light"}>
 			<nav className="navigation-menu">
 				<h1>Bac à Sable</h1>
 				<div>
@@ -17,7 +20,7 @@ function App() {
 				</section>
 			</nav>
 			<Outlet />
-		</>
+		</header>
 	);
 }
 

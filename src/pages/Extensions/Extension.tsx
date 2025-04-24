@@ -35,7 +35,7 @@ function Extension() {
 	});
 
 	return (
-		<body className={darkMode ? "container-dark" : "container-light"}>
+		<main className={darkMode ? "container-dark" : "container-light"}>
 			<header className="container-toggle">
 				<figure>
 					<img src="/images/cercle.png" alt="rouage" />
@@ -80,7 +80,7 @@ function Extension() {
 				</ul>
 			</nav>
 			<Cards filterData={filterdData} fullData={data} setData={setData} />
-		</body>
+		</main>
 	);
 }
 export default Extension;

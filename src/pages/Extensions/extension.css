@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* ? Dark */
-body {
+
+.container-dark {
 	background: linear-gradient(180deg, #040918 0%, #091540 100%);
+	& .navigation-menu,
+	h1 {
+		background: linear-gradient(180deg, #040918 100%, #091540 0%);
+	}
 }
 
 .container-toggle {
@@ -19,8 +24,8 @@ body {
 		display: flex;
 		height: 100%;
 		align-items: center;
-		margin-left: 0%;
-		width: 15%;
+		margin-left: 2%;
+		width: 20%;
 		& img {
 			width: 70%;
 			object-fit: contain;
@@ -30,6 +35,7 @@ body {
 	& button {
 		border-radius: 10px;
 		width: 40px;
+		text-align: center;
 		height: 40px;
 		margin-right: 20px;
 		background-color: hsl(226, 11%, 37%);
