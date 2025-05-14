@@ -1,9 +1,8 @@
 import "./shop.css";
 import shop from "../../shop.json";
-import { useState } from "react";
 
 function Shop() {
-  const [data, setData] = useState(shop);
+  const data = shop;
 
   return (
     <div className="background-shop">
