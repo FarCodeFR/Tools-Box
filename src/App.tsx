@@ -14,8 +14,8 @@ function App() {
         </div>
         <section className="container-text-home">
           <p>
-            Ceci est mon centre de recherche et de test utiliser le menu burger
-            sur la droite pour naviguer entre les pages
+            Bienvenue dans mon bac à sable <br /> un terrain de jeu pour
+            expérimenter, coder, tester et créer sans limite.
           </p>
         </section>
       </nav>
