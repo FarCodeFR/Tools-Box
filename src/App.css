@@ -101,6 +101,7 @@ a {
 	text-align: center;
 }
 
+
 @media screen and (max-width: 730px) {
 	.navigation-menu > h1 {
 		padding: 3px;

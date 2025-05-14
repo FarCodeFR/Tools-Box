@@ -1,0 +1,65 @@
+[
+	{
+		"id": 1,
+		"image": "/images/shop/image-baklava-desktop.jpg",
+		"name": "Baklava",
+		"description": "Pistachio Baklava",
+    "price": 4.00
+	},
+	{
+		"id": 2,
+		"image": "/images/shop/image-brownie-desktop.jpg",
+		"name": "Brownie",
+		"description": "Salted Caramel Brownie",
+    "price": 5.50
+	},
+	{
+		"id": 3,
+		"image": "/images/shop/image-cake-desktop.jpg",
+		"name": "Cake",
+		"description": "Red Velvet Cake",
+    "price": 4.50
+	},
+	{
+		"id": 4,
+		"image": "/images/shop/image-creme-brulee-desktop.jpg",
+		"name": "Crème Brûlée",
+		"description": "Vanilla Bean Crème Brûlée",
+    "price": 7.00
+	},
+	{
+		"id": 5,
+		"image": "/images/shop/image-macaron-desktop.jpg",
+		"name": "Macaron",
+		"description": "Macaron Mix of Five",
+    "price": 8.00
+	},
+	{
+		"id": 6,
+		"image": "/images/shop/image-meringue-desktop.jpg",
+		"name": "Meringue",
+		"description": "Lemon Meringue Pie",
+    "price": 5.00
+	},
+	{
+		"id": 7,
+		"image": "/images/shop/image-panna-cotta-desktop.jpg",
+		"name": "Panna Cotta",
+		"description": "Vanilla Panna Cotta",
+    "price": 6.50
+	},
+	{
+		"id": 8,
+		"image": "/images/shop/image-tiramisu-desktop.jpg",
+		"name": "Tiramisu",
+		"description": "Classic Tiramisu",
+    "price": 5.50
+	},
+	{
+		"id": 9,
+		"image": "/images/shop/image-waffle-desktop.jpg",
+		"name": "Waffle",
+		"description": "Waffle with Berries",
+    "price": 6.50
+	}
+]
