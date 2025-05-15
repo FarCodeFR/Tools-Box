@@ -96,5 +96,86 @@ color: rgb(255, 91, 15);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border: none;
   }
-
 }
+
+/* ? RESPONSIVE */
+
+@media screen and (max-width: 1300px) {
+  .background-shop {
+    display: block;
+  }
+  .container-list-dish {
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    & figure {
+      width: 50%;
+      & button {
+            height: auto;
+            z-index: 2;
+            left: 20%;
+            bottom: 6em;
+            font-size: 20px;
+      }
+      p {
+font-size: 20px;
+margin: 10% 0 0 0;
+      }
+      h2 {
+font-size: 30px;
+      }
+      h3 {
+font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .container-list-dish {
+    & figure {
+& button {
+  bottom: 6.5em;
+  font-size: 12px;
+}
+    & p {
+font-size: 16px;
+      }
+     & h2 {
+font-size:18px;
+      }
+     & h3 {
+font-size: 16px;
+      }
+    }
+  }
+  }
+
+  @media screen and (max-width: 600px) {
+  .container-list-dish {
+    & figure {
+      width: 85%;
+& button {
+  bottom: 6.5em;
+  font-size: 12px;
+}
+    & p {
+font-size: 16px;
+      }
+     & h2 {
+font-size:18px;
+      }
+     & h3 {
+font-size: 16px;
+      }
+    }
+  }
+  }
+
+ @media screen and (max-width: 480px) {
+  .container-list-dish {
+    
+width: 90%;
+
+      }  }
+  
