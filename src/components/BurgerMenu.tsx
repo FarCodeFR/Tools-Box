@@ -25,8 +25,13 @@ function BurgerMenu() {
       <NavLink to="/" className="menu-item" onClick={closeMenu}>
         Accueil
       </NavLink>
-      <NavLink to="/qrc" className="menu-item" onClick={closeMenu}>
-        QRC
+      <NavLink
+        className="menu-item"
+        target="_blank"
+        to="https://todo-list-six-beryl.vercel.app/"
+        onClick={closeMenu}
+      >
+        To Do List
       </NavLink>
       <NavLink to="/extension" className="menu-item" onClick={closeMenu}>
         Extension

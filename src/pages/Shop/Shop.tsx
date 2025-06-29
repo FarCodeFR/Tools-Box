@@ -1,11 +1,16 @@
 import "./shop.css";
 import shop from "../../shop.json";
+import { NavLink } from "react-router-dom";
 
 function Shop() {
   const data = shop;
 
   return (
     <div className="background-shop">
+      <div className="sign">
+        <p>⚠️🚧 - En cours de travaux - 🚧⚠️</p>
+        <NavLink to="/"> - Accueil - </NavLink>
+      </div>
       <section className="container-list-dish">
         {data.map((el) => {
           return (
