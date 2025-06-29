@@ -19,7 +19,7 @@ Un site personnel où je crée, teste et explore **de nouvelles fonctionnalités
 ## 🔐 Générateur de mot de passe
 <img width="945" alt="Aperçu large de la page" src="https://github.com/user-attachments/assets/5fb39aa6-73d9-4f12-b4a4-c2cbe867339b" />
 
-## 🍰 Boutique de desserts
+## 🍰  ⚠️ Boutique de desserts en cours de construction ⚠️ 🏗️
 <img width="1657" alt="Capture d’écran 2025-05-14 à 15 38 34" src="https://github.com/user-attachments/assets/f9dfce04-2f7f-42cb-a46d-d5ad2a4ad823" />
 
 ---
@@ -29,7 +29,7 @@ Un site personnel où je crée, teste et explore **de nouvelles fonctionnalités
 - React
 - TypeScript
 - CSS Modules
-- ⚠️ Three.js en cours d’intégration
+
 
 ## 🔗 Lien vers le site
 
